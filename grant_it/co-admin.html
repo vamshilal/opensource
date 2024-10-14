@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Co-admin Dashboard</h1>
+    <p>Branch: <span id="assignedBranch">Computer Science</span></p>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('studentManagement')">Manage Students</button>
+        <button class="tab-button" onclick="openTab('requests')">Requests</button>
+    </div>
+
+    <div id="studentManagement" class="tab-content">
+        <h2>Manage Students</h2>
+        <!-- Add student management CRUD UI here -->
+    </div>
+
+    <div id="requests" class="tab-content" style="display:none;">
+        <h2>Manage Requests</h2>
+        <!-- Add request approval/rejection UI here -->
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
