@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('requestPermission')">Request Permission</button>
+        <button class="tab-button" onclick="openTab('requestHistory')">Request History</button>
+    </div>
+
+    <div id="requestPermission" class="tab-content">
+        <h2>Request Permission</h2>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject">
+        <label for="details">Details:</label>
+        <textarea id="details" rows="4"></textarea>
+        <button onclick="sendRequest()">Send</button>
+        <button onclick="cancelRequest()">Cancel</button>
+    </div>
+
+    <div id="requestHistory" class="tab-content" style="display:none;">
+        <h2>Request History</h2>
+        <!-- Add request history display UI here -->
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
